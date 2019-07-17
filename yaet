@@ -1,0 +1,28 @@
+import time
+
+Birthdays ={
+	"Alien from area 51":"September 20,2019",
+	"Iron Man": "May 1963",
+	"Keanu Reeves":"September 2, 1964",
+	"Spider-Man": "August 10,1962",
+	"Howard The Alien": "December 2 2017"
+}
+
+print("Welcome To The Birthday Dictionary!")
+time.sleep(0.5)
+print("!!!!!!!!!!")
+for people in Birthdays:
+	print(people)
+print("!!!!!!!!!!")
+time.sleep(0.5)
+
+while True:
+	choice = raw_input("Whos bday would u like to look up press 'q' to quit")
+	if choice in Birthdays:
+		print("The bday of {} is ".format(choice))
+		print(Birthdays[choice])
+	elif choice == 'q':
+		print("Thank u! Goodbye!")
+		break
+	else:
+		print("They aren't in our records")
